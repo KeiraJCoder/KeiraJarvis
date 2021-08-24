@@ -31,18 +31,16 @@ p {
 display: block;
 text-align:center;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
+font-size: 18px;
 color:white
 }
 
 body {
     background-image: url('rainb.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed ;
-    background-position: center;
-    background-size: 100%
+    background-attachment: flex ;
+    background-size: cover;
   }
-
 
 
 img {
@@ -55,11 +53,13 @@ width: auto;
 }
  
   code {
+    background-color: #00000000;
     font-family: monospace;
     color: rgb(94, 255, 0);
-    background-color: #00000000;
+    
     padding: 2px;
-    font-size: 105%;
+    font-size: 20px;
+    text-align: center;
   }
 
 
@@ -81,10 +81,22 @@ h3 {
 }
 
 a:link {
-    color: rgb(255, 0, 0);
+    color: rgb(12, 223, 30);
     background-color: transparent;
     text-decoration: none;
 }
+a:visited {
+  color: violet;
+}
+a:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+a:focus {
+  color: gold;
+}
+
 
   body {
     margin: 0;
@@ -141,8 +153,22 @@ a:link {
       text-align: left;
     }
   }
-  .links {
-    position: absolute;
-    display: block;
-    text-align: center;
+.links {
+  display: block;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+}
+
+.background {
+    background-image: url('code.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit flex;
+    background-size: cover;
   }
+
+  .backg {
+    background-image: url('lion.png');
+    }
+
