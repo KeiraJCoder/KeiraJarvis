@@ -1,0 +1,42 @@
+.main{
+  background-color: black;
+  margin: 5px;
+  display: flex;
+}
+
+
+.top {
+  width:50%;
+  background-color: blueviolet;
+  margin: 5px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.left-box{
+background-color: cyan;
+height: 300px;
+width:50%;
+margin: 5px;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+}
+
+.right-box{
+  background-color: rgb(255, 0, 43);
+  height: 300px;
+  width:50%;
+  margin: 5px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+
+}
