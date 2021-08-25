@@ -161,14 +161,3 @@ font-size: 20px;
 
 }
 
-.background {
-    background-image: url('code.jpg');
-    background-repeat: no-repeat;
-    background-attachment: inherit flex;
-    background-size: cover;
-  }
-
-  .backg {
-    background-image: url('lion.png');
-    }
-
