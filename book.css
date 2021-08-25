@@ -1,40 +1,28 @@
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
 
 body {
-    background-image: url('lion.png');
+    background-image: url('trees.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
+    }
 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+img{
+    display:inline
+}
+
+img:hover {
+opacity: 0.7;
+}
 
 
-    
-  }
+.images figure {
+    padding: 10px;
+    /* display: block; */
+    background: #000;
+    display: inline-block;
+}
 
- /* .container {
+.container {
     animation: transition 0.s;
   }
   
@@ -48,7 +36,7 @@ body {
         transform: rotateX(-10deg);
     }
   }
-   */
+  
   
   h1 {
   text-align: center;
@@ -67,10 +55,12 @@ body {
   display: block;
   text-align:center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:white
+  font-size: 20px;
+  color:rgb(255, 255, 255)
+  
   }
-
+  
+  
   img {
   display: block;
   margin-left: auto;
@@ -80,6 +70,21 @@ body {
   
   }
    
+    code {
+      background-color: #00000000;
+      font-family: monospace;
+      color: rgb(94, 255, 0);
+      
+      padding: 2px;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
   h1 {
     font-size: 4vw;
     color: #ffffff;
@@ -110,6 +115,12 @@ body {
     color: gold;
   }
   
+  
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
     .topnav {
       overflow: hidden;
       background-color: rgb(0, 0, 0);
@@ -139,7 +150,27 @@ body {
       display: none;
     }
     
-
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
   .links {
     display: block;
   text-align:center;
@@ -147,3 +178,4 @@ body {
   font-size: 20px;
   
   }
+  
