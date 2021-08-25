@@ -1,9 +1,11 @@
 
 body {
     background-image: url('trees.jpg');
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+ 
     }
 
 img{
@@ -52,17 +54,17 @@ opacity: 0.7;
   }
   
   p { 
-  display: block;
+  display: table;
   text-align:center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color:rgb(255, 255, 255)
-  
+  margin: 3px auto 10px auto;
+  color:rgb(255, 255, 255);
+  background-color:black;
+
   }
-  
-  
   img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   height: auto;  
