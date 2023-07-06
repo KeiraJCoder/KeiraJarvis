@@ -4,43 +4,25 @@
   align-items: center;
   background-color: black;
   padding: 1%;
-  color:white;
-  font-size:3vh;
+  color: white;
+  font-size: 3vh;
   border-style: groove;
 }
 
+.topnav a {
+  color: rgb(12, 223, 30);
+  text-decoration: none;
+}
 
-.topnav  a:hover {
+.topnav a:hover {
   color: blueviolet;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .topnav a.active {
   color: gold;
-
 }
 
-a:link {
-  color: rgb(12, 223, 30);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: violet;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: blueviolet;
-}
-
-a:focus {
-  color: gold;
-}
-
-
-/* Responsive Styling */
 @media screen and (max-width: 600px) {
   .topnav .menu {
     display: none;
@@ -63,5 +45,23 @@ a:focus {
   .topnav .menu a.active {
     color: gold;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .topnav {
+    font-size: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .topnav {
+    font-size: 2vh;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .topnav {
+    font-size: 2.5vh;
   }
 }
