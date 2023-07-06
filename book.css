@@ -77,11 +77,16 @@ p {
   max-width: 100%;  /* This ensures that the image is responsive and does not overflow its container */
 }
 
-.image{
-  display:flex;
-  justify-content:center;
-  text-align: center;
-  margin: 15px 0; /* Increase margin */
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto; /* Adjust margin as desired */
+  max-width: 100%;
+}
+
+.image img {
+  max-width: 100%; /* Ensure the image is responsive */
 }
 
 footer {

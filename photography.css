@@ -50,16 +50,33 @@ p {
   height: 100%;
 }
 
-#widget{
-    display:flex;
-    justify-content: center;
-    width:100%;
+#widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.link{
-    display:flex;
-    justify-content: center;
-    color:greenyellow;
-    font-size:30px;
-    text-shadow:black 2px 0px;
+#widget img {
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  color: greenyellow;
+  font-size: 3vh;
+  text-shadow: black 2px 0px;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }

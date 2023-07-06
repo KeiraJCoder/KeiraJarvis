@@ -1,5 +1,6 @@
 .topnav {
   display: flex;
+  flex-wrap: wrap; /* Add flex-wrap property */
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
@@ -24,26 +25,17 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav .menu {
-    display: none;
+  .topnav {
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: flex-start; /* Adjust alignment */
   }
 
-  .topnav .icon {
-    display: block;
-  }
-
-  .topnav.responsive .menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .topnav.responsive .menu a {
-    margin: 5px 0;
+  .topnav a {
+    margin-top: 5px; /* Add margin to separate items */
   }
 
   /* Highlight the active page */
-  .topnav .menu a.active {
-    color: gold;
+  .topnav a.active {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }

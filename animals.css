@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-
   background-image: url('lion.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +18,6 @@ body {
 
 h1 {
   text-align: center;
-
   font-size: 70px;
   color:rgb(255, 255, 255);
 }
@@ -47,7 +45,6 @@ p {
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50%;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 80%;
 }
