@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@300&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('code.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  margin: 20px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
+  margin: 15px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: black 1px 0px;
+  padding: 10px;
+  margin: 10px 0;
+  height: 100%;
+}
+
+
+.code-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.code {
+  background-color: black;
+  padding:5%;
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(0, 255, 21);
+
+}
+
+.trinket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.links {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  
+}
+
+.links a{
+  color:greenyellow;
+  
+}
+
+.container{
+  background-color:white;
+  border-style:double;
+  border-width: 10%;
+  border-color:black;
+  
+}
+
+.video-container{
+  text-align: center;
+}
+
+footer {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+    margin: 10px 5px;
+    padding: 5px;
+    display: inline;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  h1 {
+    font-size: 3vh;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+  }
+
+  p {
+    font-size: 2vh;
+    margin: 10px 5px;
+    padding: 5px;
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  h1 {
+    font-size: 4vh;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  p {
+    font-size: 2vh;
+    margin: 10px 5px;
+    padding: 5px;
+    display: inline;
+  }
+}

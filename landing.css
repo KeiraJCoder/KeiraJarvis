@@ -1,0 +1,36 @@
+body {
+    background-image: url('hloldkppv.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;           /* Added */
+    justify-content: center; /* Added */
+    align-items: center;     /* Added */
+    height: 100vh;           /* Added */
+    margin: 0;               /* Added */
+    padding: 0;              /* Added */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center;     /* Centers children vertically */
+    width: 100%;             /* Takes full width of its parent */
+    height: 100%;            /* Takes full height of its parent */
+}
+
+img {
+    opacity: 1.0;
+    max-width: 100%;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+}

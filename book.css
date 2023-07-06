@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* ADD THIS LINE */
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('trees.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  flex-shrink: inherit;
+  margin: 15px; /* ADD THIS LINE */
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.images figure {
+  padding: 20px; /* Increase padding */
+  background: #000;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  margin: 20px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
+  margin: 15px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vh;
+  margin: 15px 0; /* Increase margin */
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 10px; /* Add padding */
+}
+
+.vamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* This aligns items vertically */
+  text-align: center;
+  margin: 15px auto;  /* Auto margin on left and right */
+  width: 50%;
+}
+
+.vamp img {
+  max-width: 100%;  /* This ensures that the image is responsive and does not overflow its container */
+}
+
+.image{
+  display:flex;
+  justify-content:center;
+  text-align: center;
+  margin: 15px 0; /* Increase margin */
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive section */
+@media screen and (max-width: 600px) {
+
+  .vamp {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+}

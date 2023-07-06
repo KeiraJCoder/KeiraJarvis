@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keira Jarvis : Coding</title>
+    <link rel="stylesheet" href="coding.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="about.html">Home</a>
+    <a href="coding.html" class="active">Coding</a>
+    <a href="book.html">My Book</a>
+    <a href="photography.html">The Pursuit of Creativity</a>
+    <a href="animals.html">Animal Work</a>
+    <a href="contact.html">Contact Me</a>
+</div>
+
+<h1>Learning to Code</h1>
+
+<p>Coding was always something I was fascinated by, but I had no real idea of how to do it.</p>
+
+<p>I had dabbled a little with HTML and CSS, but nothing ever really code-intensive.</p>
+
+<p>That was until I enrolled onto a course led by <a href="http://wearecodenation.com" target="_blank">Code Nation</a>.</p>
+
+<p>They provided the resources and education to work with Python script, and by the second week, gave me the skills I needed to project manage a game dev team.</p>
+
+<p>By the end of the first week of learning, I had made a very simple noughts and crosses board, which doesn't sound hugely technical but was super cool anyway:</p>
+
+<div class="code-wrapper">
+    <pre class="code">
+        space1 = "o"
+space2 = " "
+space3 = "x"
+space4 = "o"
+space5 = "x"
+space6 = " "
+space7 = "o"
+space8 = "x"
+space9 = "o"
+
+print ("   |   |  ")
+print (f"{space1}  | {space2} | {space3} ")
+print ("   |   |  ")
+print("-----------")
+print ("   |   |  ")
+print (f"{space4}  | {space5} | {space6} ")
+print ("   |   |  ")
+print("-----------")
+print ("   |   |  ")
+print (f"{space7}  | {space8} | {space9} ")
+print ("   |   |  ")
+
+if space1 == "x" and space2 == "x" and space3 == "x":
+    print ("Winner")
+elif space1 == "o" and space2 == "o" and space3 == "o":
+    print ("Winner")
+elif space1 == "x" and space4 == "x" and space7 == "x":
+    print ("Winner") 
+elif space1 == "o" and space4 == "o" and space7 == "o":
+    print ("Winner") 
+elif space1 == "x" and space5 == "x" and space9 == "x":
+    print ("Winner") 
+elif space1 == "o" and space5 == "o" and space9 == "o":
+    print ("Winner")
+elif space7 == "x" and space5 == "x" and space3 == "x":
+    print ("Winner") 
+elif space7 == "o" and space5 == "o" and space3 == "o":
+    print ("Winner") 
+elif space4 == "o" and space5 == "o" and space6 == "o":
+    print ("Winner") 
+elif space4 == "x" and space5 == "x" and space6 == "x":
+    print ("Winner") 
+elif space8 == "o" and space5 == "o" and space2 == "o":
+    print ("Winner") 
+elif space8 == "x" and space5 == "x" and space2 == "x":
+    print ("Winner")
+elif space9 == "o" and space6 == "o" and space3 == "o":
+    print ("Winner") 
+elif space9 == "x" and space6 == "x" and space3 == "x":
+    print ("Winner") 
+elif space7 == "o" and space8 == "o" and space9 == "o":
+    print ("Winner") 
+elif space7 == "x" and space8 == "x" and space9 == "x":
+    print ("Winner") 
+else:
+    print ("No winner")
+    </pre>
+</div>
+
+<p>Not only that, but I had managed to build other pieces of code to do various other functions that I was quickly becoming proud of:</p>
+
+<div class="code-wrapper">
+    <pre class="code">
+def add_up(num1, num2):
+    return num1 + num2
+
+    print(add_up(7, 3))
+
+    print(add_up(123, 480))
+
+    balance = 1000
+    pin = 1234
+
+    def atm_function(pin_entered, amount):
+        global balance 
+        if pin_entered == pin:
+            print("Access granted")
+            if amount <= balance:
+                print(f"You may withdraw that amount {amount}")
+                balance -= amount 
+                print("Your new balance is {}.
+                Thank you for using this bank".format(balance))
+        elif amount > balance:
+            print("You don't have enough")
+        else:
+            print("That was incorrect")
+
+    atm_function(1234, 333)
+    </pre>
+</div>
+
+<p>And it wasn't only super complex pieces of code that made me smile:</p>
+
+<div class="code-wrapper">
+    <pre class="code">
+x = 1
+while x <= 13:
+    print("Hello World")
+    x += 1
+    </pre>
+</div>
+
+<p>A funny little piece of code that does nothing but print "Hello World" 13 times, but it made me smile.</p>
+
+<p>Coding had always seemed so inaccessible to me until I really threw myself into the process.</p>
+
+<p>By the end of the second week, I project managed a team of developers through the planning, design, execution, and testing of a text-based adventure game.</p>
+
+<p>I was blown away by the fact that a team could put together something as complex, infuriating, interesting, and just plain old fun in such a short time.</p>
+
+<p>Our game was called Destiny, and it is something I am super proud of. You can play through here:</p>
+
+<div class="trinket">
+    <iframe src="https://trinket.io/embed/python/0dcafd6c2c?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+<p>By the end of week three, I was tasked with creating and building a fully functioning website...</p>
+
+<p>And that is where you are right now. A website built completely from scratch using nothing but HTML and CSS coding.</p>
+
+<h1>Graduating to the Master Course</h1>
+
+<p>Well, that was a wild ride!</p>
+
+<p>As with most stories in my life, that wasn't <i>quite</i> the end.</p>
+
+<p>A few months after completing the Develop course, I was trying to get work as a freelance website developer and wasn't having much luck.</p>
+
+<p>One Friday, I got a phone call from Code Nation asking whether I was still looking for work.</p>
+
+<p>Over the next few hours, I was interviewed and accepted onto the apprenticeship program with Code Nation.</p>
+
+<p>Apparently, this very website was noticed by the company and my potential was recognized.</p>
+
+<p>I started working for them the next Monday, kicking off my career as a junior software developer.</p>
+
+<p>I began studying on the 12-week Master26 course, solidifying my HTML and CSS and boosting my JavaScript skills.</p>
+
+<p>So here I am, again, coding some super cool things. Here are some of the projects I am super proud of:</p>
+
+<div>
+    <div class="container">
+        <div class="links">
+            <a href="https://keirajcoder.github.io/Festpod/" target="_blank">Festpod Website</a>
+        </div>
+        <div class="links">
+            <a href="https://keirajcoder.github.io/DoctorWho-TopTrumps/"target="_blank">Doctor Who Top Trumps</a>
+        </div>
+        <div class="links">
+            <a href="https://keirajcoder.github.io/The-Gunslinger/index.html"target="_blank">Stephen King's The Dark Tower Website</a>
+        </div>
+    
+        <div class="links">
+            <a href="https://keirajcoder.github.io/Pokedex/"target="_blank">Pokedex</a>
+        </div>
+        <div class="links">
+            <a href="https://keirajcoding.github.io/guitar-tuner/"target="_blank">Guitar Tuner</a>
+        </div>
+        <div class="links">
+            <a href="https://keirajcoder.github.io/virtualpet/" target="_blank">CyberPet</a>
+        </div>
+        <div class="links">
+            <a href="https://keirajcoder.github.io/Elvish-Translator/"target="_blank">Elvish Translator</a>
+        </div>
+    </div>
+</div>
+
+<h2>What comes next?</h2>
+
+<p>Well I have spent the last 2 years teaching people how to code</p>
+<p>I have also played around with a lot of different languages and have learned some quite complex things</p>
+<p>Including how to use Unreal Engine, and programs like Blender</p>
+<p>Where I was able to generate some rather impressive results</p>
+
+<div class="video-container">
+    <iframe width="660" height="515" src="https://www.youtube.com/embed/fBasf-7ogz4" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+<p>Who knows whats next really, like The Doctor, we will see where we end up</p>
+
+
+
+
+<br><br>
+
+<p>If you are interested in other projects I have been involved in or will be involved in, feel free to check out my<br><br> <a href="https://linkedin.com/in/keirajcoder" target="_blank">LinkedIn</a> <br><br>and connect with me.</p>
+    
+
+<p>Or if you want to connect with me on <br><br><a href="https://github.com/KeiraJCoder" target="_blank">GitHub</a>,<br><br> come say hi!</p>
+
+<br><br>
+<footer>
+  <p>&copy; 2023 Keira Jarvis. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

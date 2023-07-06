@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(ripple.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  margin: 20px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
+  margin: 15px 0; /* Increase margin */
+  text-shadow: black 1px 0px;
+}
+
+
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-shadow: white 1px 0px;
+    padding: 10px;
+    margin: 5px 0; /* Adjust the margin values to reduce the space */
+    height: 100%;
+  }
+
+.email-icon {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 80px; /* Adjust the size as desired */
+  transition: transform 0.2s ease-in-out; /* Add animation transition */
+}
+
+.email-icon:hover {
+  transform: scale(1.1); /* Add scaling effect on hover */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust the height as desired */
+  margin: 0 auto; /* Center the element horizontally */
+  text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Adjust the height as desired */
+    margin: 20px auto 10px; /* Adjust the margin values to reduce the space */
+    text-align: center;
+  }
+
+footer {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
