@@ -73,8 +73,14 @@ p {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: grey;
+  padding: 10px;
   text-align: center;
+  z-index: 9999; /* Adjust the value as needed */
 }
 
 footer p {
