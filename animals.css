@@ -25,12 +25,12 @@ h1 {
 h2 {  
   display: block;
   text-align: center;
-
+  text-shadow: black 1xp 0px;
   font-size: 25px;
   padding:10px;
   margin:10px auto;
   color:rgb(255, 255, 255);
-  background-color: black;
+
 }
 
 p {
@@ -38,7 +38,7 @@ p {
   text-align: center;
   font-size: 18px;
   color: white;
-  background-color: black;
+  text-shadow: black 1xp 0px;
   padding: 10px;
   margin: 10px auto;  /* add some margin around the p tags */
 }
@@ -46,5 +46,20 @@ p {
 img {
   display: block;
   margin: 0 auto; /* Center horizontally */
-  max-width: 80%;
+  max-width: 60%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999; /* Adjust the value as needed */
+}
+
+footer p {
+  margin: 0;
 }

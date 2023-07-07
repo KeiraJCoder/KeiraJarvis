@@ -28,11 +28,6 @@ img:hover {
   opacity: 0.7;
 }
 
-.images figure {
-  padding: 20px; /* Increase padding */
-  background: #000;
-  display: inline-block;
-}
 
 h1 {
   text-align: center;
@@ -90,14 +85,19 @@ p {
 }
 
 footer {
-  background-color: grey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
   text-align: center;
+  z-index: 9999; /* Adjust the value as needed */
 }
 
 footer p {
   margin: 0;
 }
-
 /* Responsive section */
 @media screen and (max-width: 600px) {
 

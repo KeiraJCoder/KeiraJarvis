@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -25,6 +26,10 @@ h1 {
   color: rgb(255, 255, 255);
   margin: 20px 0; /* Increase margin */
   text-shadow: black 1px 0px;
+}
+
+a{
+  color:red;
 }
 
 h2 {
@@ -57,6 +62,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 20px; /* Add some spacing between code sections */
+  width: 100%; /* Add this line to ensure the wrapper takes up the full width of its container */
+  overflow-x: auto; /* Add a horizontal scrollbar if needed */
 }
 
 .code {
@@ -65,18 +72,25 @@ p {
   font-family: 'Source Code Pro', monospace;
   color: rgb(0, 255, 21);
   max-width: 100%; /* Ensure the code sections don't exceed their container width */
+  white-space: pre-wrap; /* Add this line to wrap lines in code blocks */
+  word-wrap: break-word; /* Add this line to break words to prevent overflow */
 }
 
 
+.trinket-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* for 16:9 aspect ratio */
+  height: 0;
+  max-width: 800px; /* change this to your preferred max width */
+  margin: 0 auto; /* center the wrapper if its width is less than its container's width */
+}
+
 .trinket {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  height: 100%;
 }
 
 .links {
@@ -92,26 +106,43 @@ p {
 }
 
 .container{
-  background-color:white;
+  background-color:black;
   border-style:double;
   border-width: 10%;
   border-color:black;
+  color:white;
   
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.video-container iframe {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: grey;
   padding: 10px;
   text-align: center;
+  z-index: 9999; /* Adjust the value as needed */
 }
 
 footer p {
@@ -167,5 +198,23 @@ footer p {
     margin: 10px 5px;
     padding: 5px;
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .code {
+    font-size: 3vw;  /* Adjust this size to your preference */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .code {
+    font-size: 2vh;  /* Adjust this size to your preference */
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .code {
+    font-size: 1.5vh;  /* Adjust this size to your preference */
   }
 }

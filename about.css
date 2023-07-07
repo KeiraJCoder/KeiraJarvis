@@ -2,61 +2,99 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('rainb.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-  }
-  
-  h1 {
+}
+
+h1 {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 4vw;
     color: #ffffff;
     margin-bottom: 0;
-  }
+}
   
-  h2 {
+h2 {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     color: #ffffff;
     margin-top: 0;
-  }
+}
   
-  p {
+p {
     text-shadow:black 1px 0px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #ffffff;
-    padding: 10px; /* Use padding for spacing */
-  }
+    padding: 10px;
+}
   
-  img {
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
-  }
+}
   
-  footer {
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: grey;
     padding: 10px;
     text-align: center;
+    z-index: 9999; /* Adjust the value as needed */
   }
   
   footer p {
     margin: 0;
   }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    img {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    img {
+        max-width: 40%;
+    }
+}
