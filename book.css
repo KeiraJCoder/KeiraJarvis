@@ -84,20 +84,7 @@ p {
   max-width: 100%; /* Ensure the image is responsive */
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  padding: 10px;
-  text-align: center;
-  z-index: 9999; /* Adjust the value as needed */
-}
 
-footer p {
-  margin: 0;
-}
 /* Responsive section */
 @media screen and (max-width: 600px) {
 

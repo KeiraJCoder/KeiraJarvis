@@ -9,7 +9,7 @@ body > *:not(nav) {
 .topnav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Adjusted */
+  justify-content: center;
   align-items: center;
   background-color: black;
   padding: 1%;
@@ -36,8 +36,28 @@ body > *:not(nav) {
   display: none;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999;
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: none;
+}
+
+/* When the screen is less than 600px wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav on small screens */
 @media screen and (max-width: 600px) {
-  .topnav a {display: none;}
+  .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -90,12 +110,12 @@ body > *:not(nav) {
 
 @media screen and (max-width: 900px) {
   .topnav {
-    flex-direction: column; /* Added */
-    align-items: stretch; /* Added */
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .topnav a {
-    margin: 10px; /* Added */
-    text-align: center; /* Added */
+    margin: 10px;
+    text-align: center;
   }
 }
